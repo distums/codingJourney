@@ -1,0 +1,1 @@
+Behind the scenes, if you pass the same React Element type (with possibly different props values) into the same DOM element for ReactDOM.render(), React performs the diff’ing algorithm and only makes the minimal amount of changes needed to the DOM element. And maybe surprisingly, it returns the same component instance each time — except with updated prop and state values.
